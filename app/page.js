@@ -13,34 +13,27 @@ export default function Home() {
         <div className="absolute animate-spin-slow bg-blue-400 opacity-10 rounded-full w-72 h-72 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-2xl" />
       </div>
       {/* Hero Section */}
-      <main className="relative z-10 flex flex-col items-center justify-center gap-8 py-24 w-full max-w-3xl">
-        <Image
-          className="dark:invert animate-fade-in-up"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <h1 className="text-5xl sm:text-6xl font-extrabold text-white text-center animate-fade-in-up">
-          Welcome to{" "}
-          <span className="text-purple-400 animate-color">Sample Site</span>
+      <main className="relative z-10 flex flex-col items-center justify-center gap-8 py-24 w-full max-w-3xl px-4 sm:px-8">
+        <div className="flex flex-col items-center gap-2 animate-fade-in-up">
+          <span className="text-2xl sm:text-3xl font-bold text-purple-400 tracking-wide">Mehul Pal</span>
+          <span className="text-base sm:text-lg text-gray-400">Frontend Developer & Creative Coder</span>
+        </div>
+        <h1 className="text-4xl sm:text-6xl font-extrabold text-white text-center animate-fade-in-up leading-tight">
+          Welcome to <span className="text-purple-400 animate-color">My Sample Site</span>
         </h1>
         <p className="text-lg sm:text-xl text-gray-200 text-center max-w-xl animate-fade-in delay-200">
-          This is a modern, animated sample website built with Next.js and Tailwind
-          CSS. Enjoy beautiful motion, responsive design, and a clean, elegant
-          layout.
+          This is a modern, animated sample website built with Next.js and Tailwind CSS. Enjoy beautiful motion, responsive design, and a clean, elegant layout.
         </p>
-        <div className="flex gap-4 mt-6 animate-fade-in delay-400">
+        <div className="flex flex-col sm:flex-row gap-4 mt-6 animate-fade-in delay-400 w-full sm:w-auto justify-center items-center">
           <a
             href="#features"
-            className="px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white font-semibold shadow-lg hover:scale-105 transition-transform duration-300"
+            className="px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white font-semibold shadow-lg hover:scale-105 transition-transform duration-300 w-full sm:w-auto text-center"
           >
             Explore Features
           </a>
           <a
             href="#contact"
-            className="px-6 py-3 rounded-full bg-white/10 text-purple-200 font-semibold shadow-lg hover:bg-white/20 hover:text-white transition-all duration-300 border border-purple-400"
+            className="px-6 py-3 rounded-full bg-white/10 text-purple-200 font-semibold shadow-lg hover:bg-white/20 hover:text-white transition-all duration-300 border border-purple-400 w-full sm:w-auto text-center"
           >
             Contact
           </a>
@@ -49,9 +42,9 @@ export default function Home() {
       {/* Features Section */}
       <section
         id="features"
-        className="relative z-10 w-full max-w-5xl mt-20 flex flex-col items-center"
+        className="relative z-10 w-full max-w-5xl mt-20 flex flex-col items-center px-4 sm:px-8"
       >
-        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 animate-fade-in-up">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 animate-fade-in-up text-center">
           Features
         </h2>
         <div className="w-full overflow-x-auto">
@@ -75,7 +68,7 @@ export default function Home() {
             ].map((f, i) => (
               <div
                 key={f.title}
-                className="flex flex-col items-center bg-black/60 rounded-2xl p-8 shadow-xl border border-white/10 backdrop-blur-md animate-fade-in-up"
+                className="flex flex-col items-center bg-black/60 rounded-2xl p-8 shadow-xl border border-white/10 backdrop-blur-md animate-fade-in-up min-w-[260px]"
                 style={{ animationDelay: `${i * 0.15}s` }}
               >
                 <Image
@@ -85,7 +78,7 @@ export default function Home() {
                   height={48}
                   className="mb-4 animate-bounce-skill"
                 />
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-xl font-bold text-white mb-2 text-center">
                   {f.title}
                 </h3>
                 <p className="text-gray-300 text-center">{f.desc}</p>
@@ -97,10 +90,10 @@ export default function Home() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="relative z-10 w-full max-w-2xl mt-24 mb-12 flex flex-col items-center"
+        className="relative z-10 w-full max-w-2xl mt-24 mb-12 flex flex-col items-center px-4 sm:px-8"
       >
-        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 animate-fade-in-up">
-          Contact Us
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 animate-fade-in-up text-center">
+          Contact Me
         </h2>
         <form className="w-full flex flex-col gap-4 bg-black/60 rounded-2xl p-8 shadow-lg backdrop-blur-md animate-fade-in-up">
           <input
