@@ -48,7 +48,7 @@ export default function Home() {
           Features
         </h2>
         <div className="w-full overflow-x-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 min-w-[600px] sm:min-w-0">
+          <div className="flex gap-8 min-w-0 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-8">
             {[
               {
                 icon: "/globe.svg",
@@ -68,7 +68,7 @@ export default function Home() {
             ].map((f, i) => (
               <div
                 key={f.title}
-                className="flex flex-col items-center bg-black/60 rounded-2xl p-8 shadow-xl border border-white/10 backdrop-blur-md animate-fade-in-up min-w-[260px]"
+                className="flex flex-col items-center bg-black/60 rounded-2xl p-8 shadow-xl border border-white/10 backdrop-blur-md animate-fade-in-up min-w-[260px] sm:min-w-0 flex-shrink-0"
                 style={{ animationDelay: `${i * 0.15}s` }}
               >
                 <Image
